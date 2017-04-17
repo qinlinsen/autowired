@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="commons-logging">
+    <CLASSES>
+      <root url="jar://D:/spring-framework-3.2.2.RELEASE/libs/commons-logging.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

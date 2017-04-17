@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    <!--要使注解@Autowired有效，必须配置AutowiredAnnotationBeanPostProcessor这个类。-->
+    <!--配置AutowiredAnnotationBeanPostProcessor这个类。-->
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+    <!--配置Boss这个类的bean-->
+    <bean id="boss2" class="com.qls.test2.Boss2">
+    </bean>
+    <!--配置Car这个类的bean-->
+    <bean id="car" class="com.qls.test.Car" >
+        <property name="brand" value="上海大众0008"/>
+        <property name="price" value="100000"/>
+    </bean>
+    <!--配置Office这个类的bean-->
+    <bean id="office" class="com.qls.test.Office" >
+        <property name="officeNo" value="0006"/>
+    </bean>
+</beans>
+
